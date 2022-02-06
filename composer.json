@@ -1,0 +1,34 @@
+{
+    "name": "kchinkesh/laravel-saml",
+    "description": "A Laravel Package to Implement SAML based SSO Service Provider",
+    "type": "package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Chinkesh Kumar",
+            "email": "kumar.chinkesh@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^8.0",
+        "ext-openssl": "^8.0",
+        "illuminate/support": "^8.0",
+        "onelogin/php-saml": "^4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kchinkesh\\LaravelSaml\\": "src"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Kchinkesh\\LaravelSaml\\LaravelSamlServiceProvider"
+            ]
+        }
+    }
+}
